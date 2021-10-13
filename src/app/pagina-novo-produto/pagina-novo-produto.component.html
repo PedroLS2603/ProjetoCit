@@ -1,0 +1,28 @@
+<form>
+    <span>Novo Produto</span>
+    <div class="campos">
+        <mat-form-field>    
+            <mat-label>Nome</mat-label>
+            <input matInput type="text">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Preço</mat-label>
+            <input matInput type="number" step="any">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Categoria</mat-label>
+            <mat-select>
+              <mat-option>
+    
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Descrição</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+        <input  #fileInput type="file" id="file"> 
+    </div>
+    <a routerLink="/home" ><button mat-raised-button color="primary" type="submit">Anunciar</button></a>
+</form>
+

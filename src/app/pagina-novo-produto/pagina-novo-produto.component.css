@@ -1,0 +1,51 @@
+form {
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    min-height: 75%;
+    position: relative;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    position: absolute;
+    top: 30%;
+}
+
+.campos input, .campos textarea {
+    color: #FFFFFF
+}
+
+
+button {
+    position: absolute;
+    bottom: 2%;
+    transition: .3s;
+    left: 45%;
+}
+
+button:hover a {
+    opacity: 1;
+}
+
+span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 2.2em;
+    position: absolute;
+    top: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    opacity: .8;
+}

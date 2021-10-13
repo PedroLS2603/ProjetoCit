@@ -1,0 +1,76 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px 0px 50px;
+    align-items: center;
+}
+
+nav span {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+nav span a{
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: .7;
+}
+
+nav span a:hover {
+    opacity: 1;
+}
+
+.container {
+    margin-top: 20px;
+    min-height: 85%;
+    max-height: 85%;
+    border-radius: 15px;
+    overflow-y: scroll;
+    margin: 10px 20px 0px 20px;
+}
+
+.main-content {
+    padding: 15px 60px 15px 60px;
+}
+
+.opcoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.side-menu-container {
+    top: 75px;
+    height: 84.8%;
+    position: fixed;
+    border-radius: 15px;
+}
+
+.button-add-produto{
+    background-color: darkmagenta;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.button-add-produto:hover {
+    opacity: 1;
+}
+
+mat-icon {
+    color: #FFFFFF;
+    font-size: 2em; 
+}
+

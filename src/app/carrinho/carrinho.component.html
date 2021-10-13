@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Carrinho</h1>
+    <div class="itens-container">
+        <div class="itens" *ngFor="let item of list">
+            <div class="item-container">
+                <span>{{ item }}</span>
+                <span>Qtd x Preço</span>
+                <div class="item-opcoes">
+                    <mat-icon id="iconAdd">add</mat-icon>
+                    <mat-icon id="iconRemove">remove</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <span>Total:</span>
+        <span>R$100,00</span>
+    </div>
+    <button><span>Confirmar pedido</span></button>
+</div>

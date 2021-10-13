@@ -1,0 +1,17 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav class ="side-menu-container"mode="side" opened>
+        <nav>
+            <span>Opções</span>
+            <div class="opcoes">
+                <span><a routerLink="/conta/">Conta</a></span>
+                <span><a routerLink="/conta/enderecos">Endereço</a></span>
+                <span><a routerLink="/conta/pedidos">Pedidos</a></span>
+                <span><a routerLink="/conta/anuncios">Anúncios</a></span>
+            </div>
+        </nav>
+    </mat-sidenav>
+    <mat-sidenav-content class="main-content">
+        <h1>Anúncios</h1>
+        <app-card></app-card>
+    </mat-sidenav-content>
+</mat-sidenav-container>

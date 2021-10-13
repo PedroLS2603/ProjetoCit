@@ -1,0 +1,38 @@
+.card-container {
+    background-color: darkmagenta;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    min-width: 280px;
+    padding: 20px;
+    align-items: center;
+}
+
+span {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+.card-opcoes {
+    display: flex;
+}
+
+.card-opcoes span  {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.card-opcoes span:hover{
+    opacity: 1;
+}
+
+.card-opcoes span{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+mat-icon {
+    color: #FFFFFF;
+}
