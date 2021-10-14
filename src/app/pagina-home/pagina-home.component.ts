@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 
 import { ProdutoService } from './../services/produto.service';
@@ -11,10 +11,13 @@ import { CategoriaService } from './../services/categoria.service';
   templateUrl: './pagina-home.component.html',
   styleUrls: ['./pagina-home.component.css']
 })
+
 export class PaginaHomeComponent implements OnInit {
   produtos = new Array<Produto>();
   categorias = new Array<Categoria>();
   
+  produtosComprado = new Array<Produto>();
+
   constructor(private ps: ProdutoService, private cs: CategoriaService) { }
 
   ngOnInit(): void {

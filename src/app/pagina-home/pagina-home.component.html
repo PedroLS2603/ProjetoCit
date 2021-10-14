@@ -9,7 +9,7 @@
     </mat-sidenav>
     <mat-sidenav-content class="main-content">
         <div class="produtos-grid" *ngFor="let prod of produtos">
-                <app-card [produto]="prod"></app-card>
+                <app-card [produto]="prod" [produtosComprado]="produtosComprado"></app-card>
         </div>
         <a routerLink="/produto/novo"><span class="button-add-produto"><mat-icon>add</mat-icon></span></a>
     </mat-sidenav-content>

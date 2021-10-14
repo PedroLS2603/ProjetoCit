@@ -1,10 +1,10 @@
 <div class="card-container" *ngIf="produto">
     <img src="https://images.emojiterra.com/google/android-10/512px/1f9e2.png" width="100px">
     <span>{{ produto.nome }}</span>
-    <span>R${{ produto.preco }}</span>
+    <span>R${{ produto.preco.toPrecision(4) }}</span>
 
     <div class="card-opcoes">
-        <span><mat-icon>add</mat-icon></span>
+        <span><mat-icon (click) = "addItem()">add</mat-icon></span>
         <span><a [routerLink]= "['/produto', produto.id]"><mat-icon>launch</mat-icon></a></span>
     </div>
 </div>

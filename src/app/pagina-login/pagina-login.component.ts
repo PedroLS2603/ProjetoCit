@@ -15,10 +15,11 @@ export class PaginaLoginComponent implements OnInit {
   }
 
   submit (form: any) {
-    this.loginService.logar(form.form.value.email, form.form.value.senha).subscribe(userExist => {
-      if(userExist) {
+    this.loginService.logar(form.form.value.email, form.form.value.senha).subscribe(user => {
+      if(user) {
         this.route.navigate(['/home']);
-        this.loginService.logado = true;
+        this.loginService.changeStatusLogin();
+        this.loginService.configUser(user.id);
       }
       else {
         console.log("Usuário não existe!");
